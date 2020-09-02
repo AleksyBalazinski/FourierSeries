@@ -76,7 +76,7 @@ int main()
 	for (double x_px = 0; x_px < 800; x_px += 10)
 	{
 
-		curve.append(sf::Vertex(sf::Vector2f(x_px, -50*Fourier(x_px, gen, &F)+400))); //x_px, 50 * sin(x_px / 50 - 8) + 400
+		curve.append(sf::Vertex(sf::Vector2f(x_px, -50*Fourier(x_px, gen, &F)+400))); //You can replace F with any function you like 
 	}
 
 	while (window.isOpen())
@@ -95,7 +95,7 @@ int main()
 					for (double x_px = 0; x_px < 800; x_px += 10)
 					{
 						
-						curve.append(sf::Vertex(sf::Vector2f(x_px, -50 * Fourier(x_px, gen, &F) + 400))); //x_px, 50 * sin(x_px / 50 - 8) + 400
+						curve.append(sf::Vertex(sf::Vector2f(x_px, -50 * Fourier(x_px, gen, &F) + 400))); //You can replace F with any function you like 
 					}
 				}
 			}
